@@ -2,6 +2,7 @@ function showVar()
 {
 	# clear screen and write global variable
 	cls
+	# using write-output, show global variable
 	Write-Output "'$myVar' is a global variable!"
 
 	return;
