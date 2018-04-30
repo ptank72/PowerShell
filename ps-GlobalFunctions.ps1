@@ -10,5 +10,5 @@ function showVar()
 # create and initialize global var
 $global:myVar = "Hello World"
 
-# show global is accessible in local function
+# call function to show global variable
 showVar
