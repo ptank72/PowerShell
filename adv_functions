@@ -1,0 +1,19 @@
+function Write-Input ()
+{
+  [cmdbinding()]
+  param(
+    [parameter($true)]
+    [ValidateNotNull()]
+    [STRING]$input
+  )
+  begin{
+    # beginning section of advanced function
+  }
+  process{
+    # main section of advanced function
+    Write-Verbose $input
+  }
+  end{
+    # end section of advanced function
+  }
+}
