@@ -2,7 +2,7 @@ function Write-Input ()
 {
   [cmdbinding()]
   param(
-    [parameter($true)]
+    [parameter(mandatory = $true)]
     [ValidateNotNull()]
     [STRING]$input
   )
