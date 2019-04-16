@@ -1,19 +1,19 @@
 function WriteTo-Console ()
 {
-  [cmdbinding()]
+  [cmdletbinding()]
   param(
     [parameter(mandatory = $true)]
     [ValidateNotNull()]
     [STRING]$input_string
   )
   begin{
-    # beginning section of advanced function
+
   }
   process{
     # main section of advanced function
     Write-Host "Your input: $input_string"
   }
   end{
-    # end section of advanced function
+
   }
 }
