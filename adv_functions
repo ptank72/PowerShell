@@ -1,4 +1,4 @@
-function Write-Input ()
+function WriteTo-Console ()
 {
   [cmdbinding()]
   param(
@@ -11,7 +11,7 @@ function Write-Input ()
   }
   process{
     # main section of advanced function
-    Write-Verbose $input
+    Write-Host "Your input: $input"
   }
   end{
     # end section of advanced function
