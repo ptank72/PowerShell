@@ -1,9 +1,11 @@
 function showVar()
 {
+	[cmdletbinding()]
+	PARAM()
 	# clear screen and write global variable
 	cls
 	# using write-output, show global variable
-	Write-Output "'$myVar' is a global variable!"
+	Write-Verbose "'$myVar' is a global variable!"
 
 	return;
 }
@@ -11,4 +13,4 @@ function showVar()
 $global:myVar = "Hello World"
 
 # call function to show global variable
-showVar
+showVar -Verbose
